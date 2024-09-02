@@ -42,8 +42,20 @@ $ pip install ipython_genutils==7.16.1
 $ git clone https://github.com/darwin-arrechea-castillo/Mask_RCNN-Raceme_Instance_Segmentation.git
 12. Framework setup: Inside the cloned repo folder and within the conda environment, run:
 $ python setup.py install 
-
-
+$ pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 ```
-
-
+If Git is not installed but a portable version is available (common in servers with usage restrictions), you can resolve this by temporarily adding the portable Git to the system path. Use the following command (example for CIAT processing server):
+```
+13. Portable Git:
+$ $env:PATH += ";Z:\4.Scripts\DarwinArrechea\portables\portableGit\bin".
+```
+## **C++ COMPILERS**
+Some packages require C++ compilers to be installed on your system. You can download them from [here](https://visualstudio.microsoft.com/es/visual-cpp-build-tools/). During installation, make sure to select the following components:
+- **Workloads:**
+  - **Desktop development with C++:** This will install the basic C++ tools required to compile Python packages that need compilation.
+- **Individual Components:**
+  - Make sure the following options are selected (there might be variations depending on the specific version of the installer, but try to choose the closest options)
+      - **MSVC:** C++ compiler. select the latest available version.
+      - **Windows 10 SDK:** If using windows 10. For other windows versions, select the SDK corresponding to your version.
+      - **C++ CMake tools for windows:** Useful for packages using CMake
+      - **C++ ATL for latest v142 build tools (x86 & x64):** Necessary for some compilations.
