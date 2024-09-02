@@ -49,7 +49,8 @@ If Git is not installed but a portable version is available (common in servers w
 13. Portable Git:
 $ $env:PATH += ";Z:\4.Scripts\DarwinArrechea\portables\portableGit\bin".
 ```
-## **C++ COMPILERS**
+
+# C++ Compilers
 Some packages require C++ compilers to be installed on your system. You can download them from [here](https://visualstudio.microsoft.com/es/visual-cpp-build-tools/). During installation, make sure to select the following components:
 - **Workloads:**
   - **Desktop development with C++:** This will install the basic C++ tools required to compile Python packages that need compilation.
@@ -59,3 +60,28 @@ Some packages require C++ compilers to be installed on your system. You can down
       - **Windows 10 SDK:** If using windows 10. For other windows versions, select the SDK corresponding to your version.
       - **C++ CMake tools for windows:** Useful for packages using CMake
       - **C++ ATL for latest v142 build tools (x86 & x64):** Necessary for some compilations.
+
+# Proxy Issues
+Most tests were conducted on a server connected to the network via an Ethernet port. This network had restrictions on proxy access.
+
+To install packages within the environment using pip without issues, it was necessary to configure the proxy (http://proxy.unicauca.edu.co with port:3128) to allow HTTPS traffic to https://pypi.org/. 
+
+To use the proxy with pip, the command used was:
+```
+$ pip install --proxy http://proxy.unicauca.edu.co:3128 package_name
+```
+
+If problems persisted due to timeouts, a larger timeout value was set as follows:
+```
+$ pip install --proxy http://proxy.unicauca.edu.co:3128 --default-timeout=1000 package_name
+
+* 1000 indicates the timeout in seconds.
+```
+
+For cloning repositories using Git, the proxy configuration was set with:
+```
+$ git config --global http.proxy http://proxy.unicauca.edu.co:3128
+$ git config --global https.proxy http://proxy.unicauca.edu.co:3128
+
+* This configures Git to use the proxy for all operations.
+```
