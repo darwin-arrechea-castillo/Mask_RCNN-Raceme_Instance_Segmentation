@@ -85,3 +85,6 @@ $ git config --global https.proxy http://proxy.unicauca.edu.co:3128
 
 * This configures Git to use the proxy for all operations.
 ```
+
+# Desktop App with tkinter
+Inicialmente se intentó crear una app de escritorio sencilla usando QT, sin embargo esta tarea resultaba 
