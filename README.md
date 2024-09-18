@@ -87,4 +87,25 @@ $ git config --global https.proxy http://proxy.unicauca.edu.co:3128
 ```
 
 # Desktop App with tkinter
-Inicialmente se intentó crear una app de escritorio sencilla usando QT, sin embargo esta tarea resultaba 
+Initially, a simple desktop app was attempted using QT, but the idea was discarded due to compatibility issues between QT and the libraries required for deep learning. Ultimately, the decision was made to implement the app using Tkinter, which is lighter than QT and comes integrated with Python, eliminating compatibility problems.
+- **Running the desktop app:**
+```
+1. Open the “command prompt” or the “anaconda powershell prompt.”
+2. Activate the virtual environment:
+$ conda activate maskrcnn3.8.0
+3. Navigate to the script directory:
+$ cd “D:\OneDrive - CGIAR\Documents\CIAT\UI-RacemeCounting\MaskRCNN-RacemeDetector\samples”
+4. Run the script:
+$ python DesktopApp-RacemeDetector.py
+```
+
+
+# Web App with Gradio
+The 2.2.15 gradio version is compatible with all the packages already installed.
+
+* Note: During the installation try not to update any other packages.
+```
+$ pip install gradio==2.2.15
+```
+
+
