@@ -42,7 +42,8 @@ $ pip install ipython_genutils
 $ git clone https://github.com/darwin-arrechea-castillo/Mask_RCNN-Raceme_Instance_Segmentation.git
 12. Framework setup: Inside the cloned repo folder and within the conda environment, run:
 $ python setup.py install
-!!! Note: If a change is made to the maskrcnn base files you have to do again the step #12 but first you must delete the file "mask_rcnn-2.1-py3.8.egg" located in the folder "...Lib/site-packages"
+!!! Note: If a change is made to the maskrcnn base files you have to do again the step #12 but first
+    you must delete the file "mask_rcnn-2.1-py3.8.egg" located in the folder "...Lib/site-packages"
 $ pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 ```
 
