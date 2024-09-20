@@ -107,5 +107,5 @@ The 2.2.15 gradio version is compatible with all the packages already installed.
 ```
 $ pip install gradio==2.2.15
 ```
-
+Note: You would need to have numpy==1.19.5 y pandas==1.1.5
 
