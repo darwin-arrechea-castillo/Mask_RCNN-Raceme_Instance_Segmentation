@@ -35,9 +35,9 @@ $ conda install jupyter==1.0.0
 With the previous packages, everything should work, although sometimes there are additional issues related to missing or outdated  packages. If that happens, you should install/update the following packages:
 ```
 9. Update module:
-$ pip install --upgrade charset_normalizer==3.3.2
+$ pip install --upgrade charset_normalizer
 10. Install additional module:
-$ pip install ipython_genutils==7.16.1
+$ pip install ipython_genutils
 11. Clone repository:
 $ git clone https://github.com/darwin-arrechea-castillo/Mask_RCNN-Raceme_Instance_Segmentation.git
 12. Framework setup: Inside the cloned repo folder and within the conda environment, run:
