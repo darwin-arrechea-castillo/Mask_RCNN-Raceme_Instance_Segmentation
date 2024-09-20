@@ -41,9 +41,13 @@ $ pip install ipython_genutils
 11. Clone repository:
 $ git clone https://github.com/darwin-arrechea-castillo/Mask_RCNN-Raceme_Instance_Segmentation.git
 12. Framework setup: Inside the cloned repo folder and within the conda environment, run:
-$ python setup.py install 
+$ python setup.py install
+!!! Note: If a change is made to the maskrcnn base files you have to do again the step #12 but first you must delete the file "mask_rcnn-2.1-py3.8.egg" located in the folder "...Lib/site-packages"
 $ pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 ```
+
+
+
 If Git is not installed but a portable version is available (common in servers with usage restrictions), you can resolve this by temporarily adding the portable Git to the system path. Use the following command (example for CIAT processing server):
 ```
 13. Portable Git:
