@@ -101,7 +101,7 @@ $ conda activate maskrcnn3.8.0
 3. Navigate to the script directory:
 $ cd “D:\OneDrive - CGIAR\Documents\CIAT\UI-RacemeCounting\MaskRCNN-RacemeDetector”
 4. Run the script:
-$ python DesktopApp-RacemeDetector.py
+$ python DesktopApp-BrRacemeCounter.py
 ```
 
 
