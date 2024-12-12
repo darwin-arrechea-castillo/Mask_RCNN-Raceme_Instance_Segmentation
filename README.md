@@ -99,7 +99,7 @@ Initially, a simple desktop app was attempted using QT, but the idea was discard
 2. Activate the virtual environment:
 $ conda activate maskrcnn3.8.0
 3. Navigate to the script directory:
-$ cd “D:\OneDrive - CGIAR\Documents\CIAT\UI-RacemeCounting\MaskRCNN-RacemeDetector\samples”
+$ cd “D:\OneDrive - CGIAR\Documents\CIAT\UI-RacemeCounting\MaskRCNN-RacemeDetector”
 4. Run the script:
 $ python DesktopApp-RacemeDetector.py
 ```
