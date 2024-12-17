@@ -1,4 +1,4 @@
-# Mask R-CNN for Object Detection and Segmentation
+# BrRacemeCounter: Mask R-CNN for Raceme Instance Segmentation
 
 Main repos on which this implementation was based:
 
