@@ -114,3 +114,8 @@ $ pip install gradio==2.2.15
 ```
 Note: You would need to have numpy==1.19.5 y pandas==1.1.5
 
+# Author
+Tropical Forages Program, CIAT.
+
+# Aknowledgements
+This work was partially funded by Accelerated Breeding Initiatiive of CGIAR.
